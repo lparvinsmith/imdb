@@ -156,7 +156,7 @@ $("#user-create").on('click', function(){
     url: '/users',
     method: 'POST',
     data: {
-      role: {
+      user: {
         email: $("#user-email").val(),
         username: $("#user-username").val(),
         password: $("#user-password").val(),
@@ -175,7 +175,7 @@ $("#user-update").on('click', function(){
     url: '/users/' + $("#user-id").val(),
     method: 'PATCH',
     data: {
-      role: {
+      user: {
         name: $("#user-name").val(),
         username: $("#user-username").val(),
         password: $("#user-movie-id").val(),
