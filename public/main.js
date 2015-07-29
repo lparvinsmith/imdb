@@ -207,7 +207,7 @@ $("#review-create").on('click', function(){
     url: '/reviews',
     method: 'POST',
     data: {
-      role: {
+      review: {
         score: Number($("#review-score").val()),
         content: $("#review-content").val(),
         movie_id: Number($("#review-movie-id").val()),
@@ -226,7 +226,7 @@ $("#review-update").on('click', function(){
     url: '/reviews/' + $("#review-id").val(),
     method: 'PATCH',
     data: {
-      role: {
+      review: {
         score: Number($("#review-score").val()),
         content: $("#review-content").val(),
         movie_id: Number($("#review-movie-id").val()),
